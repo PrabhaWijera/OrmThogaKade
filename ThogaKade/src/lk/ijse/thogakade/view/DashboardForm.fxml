@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="551.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakade.controller.DashboardFormController">
+   <children>
+      <Label layoutX="344.0" layoutY="14.0" prefHeight="42.0" prefWidth="174.0" text="Dashboard" textFill="#5e5c5c">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="124.0" layoutY="211.0" onAction="#btnCustomerFormOnAction" prefHeight="102.0" prefWidth="94.0" style="-fx-background-color: #1abc9c;" text=".">
+         <graphic>
+            <ImageView fitHeight="106.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/customer.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="344.0" layoutY="211.0" onAction="#btnItemFormOnAction" prefHeight="102.0" prefWidth="94.0" style="-fx-background-color: #34495e;" text=".">
+         <graphic>
+            <ImageView fitHeight="106.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/item.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="568.0" layoutY="211.0" onAction="#btnPlaceOrderFormOnAction" prefHeight="102.0" prefWidth="94.0" style="-fx-background-color: #9b59b6;" text=".">
+         <graphic>
+            <ImageView fitHeight="106.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/order.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
