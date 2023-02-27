@@ -1,21 +1,17 @@
 package lk.ijse.thogakade.DTO;
 
-/*
-    @author DanujaV
-    @created 11/15/22 - 11:53 PM   
-*/
 
 import java.time.LocalDate;
 
-public class Order {
+public class OrderDTO {
     private String orderId;
     private LocalDate date;
     private String customerId;
 
-    public Order() {
+    public OrderDTO() {
     }
 
-    public Order(String orderId, LocalDate date, String customerId) {
+    public OrderDTO(String orderId, LocalDate date, String customerId) {
         this.orderId = orderId;
         this.date = date;
         this.customerId = customerId;
@@ -47,7 +43,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "OrderDTO{" +
                 "orderId='" + orderId + '\'' +
                 ", date='" + date + '\'' +
                 ", customerId='" + customerId + '\'' +

@@ -1,11 +1,19 @@
 package lk.ijse.thogakade.entity;
 
 
-
-public class Customer {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
+@Entity
+public class Customer implements Serializable {
+    @Id
     private String id;
+    @Column
     private String name;
+    @Column
     private String address;
+    @Column
     private double salary;
 
     public Customer() {

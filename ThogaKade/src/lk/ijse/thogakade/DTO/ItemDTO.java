@@ -1,20 +1,17 @@
 package lk.ijse.thogakade.DTO;
 
-/*
-    @author DanujaV
-    @created 11/15/22 - 9:44 PM   
-*/
 
-public class Item {
+
+public class ItemDTO {
     private String code;
     private String description;
     private double unitPrice;
     private int qtyOnHand;
 
-    public Item() {
+    public ItemDTO() {
     }
 
-    public Item(String code, String description, double unitPrice, int qtyOnHand) {
+    public ItemDTO(String code, String description, double unitPrice, int qtyOnHand) {
         this.code = code;
         this.description = description;
         this.unitPrice = unitPrice;
@@ -55,7 +52,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
+        return "ItemDTO{" +
                 "code='" + code + '\'' +
                 ", description='" + description + '\'' +
                 ", unitPrice=" + unitPrice +

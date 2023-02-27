@@ -1,9 +1,5 @@
 package lk.ijse.thogakade.DTO;
 
-/*
-    @author DanujaV
-    @created 11/1/22 - 10:32 AM   
-*/
 
 public class CustomerDTO {
     private String id;

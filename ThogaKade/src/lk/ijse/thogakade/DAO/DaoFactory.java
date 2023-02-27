@@ -1,6 +1,7 @@
 package lk.ijse.thogakade.DAO;
 
 import lk.ijse.thogakade.DAO.custom.impl.CustomerModel;
+import lk.ijse.thogakade.DAO.custom.impl.ItemModel;
 
 import java.sql.Connection;
 
@@ -15,6 +16,9 @@ public class DaoFactory {
         switch (daoType){
             case CUSTOMER:
                 return (T) new CustomerModel(connection);
+
+            case ITEM:
+                return (T) new ItemModel(connection);
 
             default:
                 return null;

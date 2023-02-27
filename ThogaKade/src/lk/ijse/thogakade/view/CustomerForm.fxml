@@ -13,7 +13,7 @@
 
 <AnchorPane fx:id="pane" prefHeight="551.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakade.controller.CustomerFormController">
     <children>
-        <JFXButton buttonType="RAISED" layoutX="626.0" layoutY="254.0" onAction="#btnAddOnAction" style="-fx-background-color: #3498db;" text="SAVE" textFill="WHITE">
+        <JFXButton buttonType="RAISED" layoutX="529.0" layoutY="254.0" onAction="#btnAddOnAction" style="-fx-background-color: #3498db;" text="SAVE" textFill="WHITE">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
@@ -52,5 +52,10 @@
                 <Cursor fx:constant="HAND" />
             </cursor>
         </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="605.0" layoutY="254.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #3498db;" text="UPDATE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
     </children>
 </AnchorPane>

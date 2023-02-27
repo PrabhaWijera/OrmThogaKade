@@ -1,5 +1,5 @@
 package lk.ijse.thogakade.Service;
 
 public enum ServiceType {
-    CUSTOMER
+    CUSTOMER,ITEM
 }

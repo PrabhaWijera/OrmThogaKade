@@ -1,15 +1,15 @@
 package lk.ijse.thogakade.DAO.custom.impl;
 
-import lk.ijse.thogakade.DTO.Order;
+import lk.ijse.thogakade.DTO.OrderDTO;
 import lk.ijse.thogakade.util.CrudUtil;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class OrderModel {
-    public static boolean save(Order order) throws SQLException, ClassNotFoundException {
+    public static boolean save(OrderDTO orderDTO) throws SQLException, ClassNotFoundException {
         String sql = "INSERT INTO Orders VALUES(?, ?, ?)";
-        return CrudUtil.execute(sql, order.getOrderId(), order.getDate(), order.getCustomerId());
+        return CrudUtil.execute(sql, orderDTO.getOrderId(), orderDTO.getDate(), orderDTO.getCustomerId());
     }
 
     public static String generateNextOrderId() throws SQLException, ClassNotFoundException {

@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
 import java.io.IOException;
 
@@ -22,8 +21,14 @@ public class Navigation {
                 window.setTitle("CustomerDTO Manage Form");
                 initUI("CustomerForm.fxml");
                 break;
+
+            case ITEM:
+                window.setTitle("ItemDTO");
+                initUI("ManageItemForm.fxml");
+                break;
+
             case PLACE_ORDER:
-                window.setTitle("Place Order Form");
+                window.setTitle("Place OrderDTO Form");
                 initUI("PlaceOrderForm.fxml");
                 break;
             case DASHBOARD:

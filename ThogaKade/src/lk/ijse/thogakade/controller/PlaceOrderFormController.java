@@ -14,7 +14,7 @@ import lk.ijse.thogakade.DAO.custom.impl.ItemModel;
 import lk.ijse.thogakade.DAO.custom.impl.OrderModel;
 import lk.ijse.thogakade.DAO.custom.impl.PlaceOrderModel;
 import lk.ijse.thogakade.DTO.CartDetail;
-import lk.ijse.thogakade.DTO.Item;
+import lk.ijse.thogakade.DTO.ItemDTO;
 import lk.ijse.thogakade.DTO.PlaceOrder;
 import lk.ijse.thogakade.util.Navigation;
 import lk.ijse.thogakade.util.Routes;
@@ -164,9 +164,9 @@ public class PlaceOrderFormController implements Initializable {
                 /* to clear table */
                 obList.clear();
                 loadNextOrderId();
-                new Alert(Alert.AlertType.CONFIRMATION, "Order Placed!").show();
+                new Alert(Alert.AlertType.CONFIRMATION, "OrderDTO Placed!").show();
             } else {
-                new Alert(Alert.AlertType.ERROR, "Order Not Placed!").show();
+                new Alert(Alert.AlertType.ERROR, "OrderDTO Not Placed!").show();
             }
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
@@ -236,7 +236,7 @@ public class PlaceOrderFormController implements Initializable {
     void cmbItemOnAction(ActionEvent event) {
         String code = String.valueOf(cmbItemCode.getValue());
         try {
-            Item item = ItemModel.search(code);
+            ItemDTO item = ItemModel.search(code);
             fillItemFields(item);
             txtQty.requestFocus();
         } catch (SQLException | ClassNotFoundException e) {
@@ -244,7 +244,7 @@ public class PlaceOrderFormController implements Initializable {
         }
     }
 
-    private void fillItemFields(Item item) {
+    private void fillItemFields(ItemDTO item) {
         lblDescription.setText(item.getDescription());
         lblUnitPrice.setText(String.valueOf(item.getUnitPrice()));
         lblQtyOnHand.setText(String.valueOf(item.getQtyOnHand()));
